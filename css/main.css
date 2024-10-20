@@ -1,0 +1,35 @@
+svg {
+  margin: 20% 20%;
+  width: 60%;
+}
+.wheel-lines {
+  animation: rotate 3s linear infinite;
+  transform-origin: 101.15px 53.75px; /* set origin to  (x1, y1) */
+}
+
+.wheel-lines-2 {
+  animation: rotate 3s linear infinite;
+  transform-origin: 24.52px 52.64px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.road-lines {
+  animation: slide-left 3s linear infinite;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%); /* start position outside of canvas */
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
